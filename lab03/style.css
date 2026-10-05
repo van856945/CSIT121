@@ -1,0 +1,43 @@
+
+body {
+    background-color: #eaeaea;
+    color: #000033;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+h3 {
+    color: #333333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: purple;
+}
+
+#lab02 {
+    background-color: white;
+    padding: 15px;
+}
+
+.lab03 {
+    background-color: lightgreen;
+    padding: 15px;
+}
+
