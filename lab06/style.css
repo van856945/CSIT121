@@ -1,0 +1,84 @@
+
+body {
+    background-color: #eaeaea;
+    color: #000033;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+h3 {
+    color: #333333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: purple;
+}
+
+#lab02 {
+    background-color: white;
+    padding: 15px;
+}
+
+.lab03 {
+    background-color: lightgreen;
+    padding: 15px;
+}
+
+
+
+/* Navigation links */
+nav {
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    margin: 8px;
+    display: inline-block;
+}
+
+/* Mobile layout */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+article {
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+#lab05 {
+    background-color: white;
+    padding: 15px;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    article {
+        flex: 1 1 calc(50% - 15px);
+    }
+}
