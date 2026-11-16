@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Tier List Feedback - Lab 07</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Boss Tier List Feedback</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="tierlist.html">Tier List</a>
+            <a href="contact.html" aria-current="page">Contact Form</a>
+        </nav>
+    </header>
+  <main>
+      <h2>Share Your Opinion</h2>
+        <p>This is a practice form for class. It does not send or save your answers.</p>
+        <form onsubmit="return false;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <fieldset>
+                <legend>Which tier has your favorite bosses?</legend>
+                <div class="choice"><input type="radio" id="tier-s" name="favorite-tier" value="S" required><label for="tier-s">S Tier</label></div>
+                <div class="choice"><input type="radio" id="tier-a" name="favorite-tier" value="A"><label for="tier-a">A Tier</label></div>
+                <div class="choice"><input type="radio" id="tier-b" name="favorite-tier" value="B"><label for="tier-b">B Tier</label></div>
+                <div class="choice"><input type="radio" id="tier-c" name="favorite-tier" value="C"><label for="tier-c">C Tier</label></div>
+                <div class="choice"><input type="radio" id="tier-d" name="favorite-tier" value="D"><label for="tier-d">D Tier</label></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which boss qualities matter to you? (Choose any)</legend>
+                <div class="choice"><input type="checkbox" id="challenge" name="qualities" value="challenge"><label for="challenge">Challenge</label></div>
+                <div class="choice"><input type="checkbox" id="music" name="qualities" value="music"><label for="music">Music</label></div>
+                <div class="choice"><input type="checkbox" id="design" name="qualities" value="design"><label for="design">Boss design</label></div>
+            </fieldset>
+
+            <label for="game">Which game has your favorite bosses?</label>
+            <select id="game" name="game" required>
+                <option value="">Choose a game</option>
+                <option value="elden-ring">Elden Ring</option>
+                <option value="sekiro">Sekiro</option>
+                <option value="dark-souls">Dark Souls</option>
+                <option value="god-of-war">God of War</option>
+                <option value="hollow-knight">Hollow Knight</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="comment">What would you change about my rankings?</label>
+            <textarea id="comment" name="comment" rows="5" required></textarea>
+
+            <p><button type="submit">Submit Feedback</button></p>
+        </form>
+    </main>
+  <footer><p>CSIT121 - Lab 07</p></footer>
+</body>
+</html>
