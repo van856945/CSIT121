@@ -1,4 +1,3 @@
-// Open or close the navigation links on small screens.
 document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.querySelector(".menu-toggle");
     const navigation = document.querySelector(".topnav");
